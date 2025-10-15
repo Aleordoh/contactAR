@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2eb5f97af6.js" crossorigin="anonymous"></script>
+    <title>Error!!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="column">
+                <div class="columns is-half has-text-centered has-background-link">
+                    <div class="card">
+                        <header class="card-header">
+                            <div class="card-header-title is-centered">
+                                <h1 class="title is-2">
+                                    <b>
+                                        <%= error.status %>
+                                    </b>
+                                    <%= message %>
+                                </h1>
+                            </div>
+                        </header>
+                        <p class="subtitle is-3">
+                            Se ha producido un error al intentar acceder a: <b>
+                                <%= path %>
+                            </b>.
+                        </p>
+                        <p class="subtitle is-4">Póngase en contacto con el administrador del sitio...!
+
+                        </p>
+                        <div class="block"><i>
+                                <%= error.stack %>
+                            </i>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <a class="button" href="/">Home</a>
+                <a class="button"
+                    href="mailto:aleordoh@gmail.com?subject=Ahhhhh!!!%20se%20ha%20yoto!!!!&body=Hiuston%20tenemos%20un%20problema!!!%0A{<%= error.stack %>}">Reportar
+                    Error
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
