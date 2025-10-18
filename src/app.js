@@ -5,7 +5,6 @@ import methodOverride from 'method-override';
 import logger from 'morgan';
 import { join } from 'path';
 import { __dirname } from './utils.js';
-import mainRoutes from './routes/main.routes.js';
 
 // ************ Instancia ************
 const app = express();
@@ -21,7 +20,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(methodOverride('_method'));
 
+// ************ Imports Rutes ************
+import mainRoutes from './routes/main.routes.js';
+import userRoutes from './routes/user.routes.js'
+import authRoutes from './routes/auth.routes.js'
+
 // ************ Rutas ************
+app.use('/user',userRoutes)
+app.use('/authenticate',authRoutes)
 app.use('/', mainRoutes);
 
 // ************ 404 ************

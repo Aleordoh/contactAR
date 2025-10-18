@@ -2,20 +2,27 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/2eb5f97af6.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <title>Hola Mundo!</title>
+  <%- include('./partials/head.ejs') %>
 </head>
 
 <body>
-  <section class="section">
-    <container class="container">
-      <h1 class="title is-1 has-text-link has-text-centered">ACA EMPIEZA TODO</h1>
-    </container>
+  <section class="hero is-landing is-fullheight">
+    <div class="hero-head">
+      <%- include('./partials/navbar.ejs') %>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-6 is-offset-3">
+          <h1 class="title is-1 has-text-light">
+            Contact-ar
+          </h1>
+          <h2 class="subtitle has-text-light">
+            Juntos logramos la sinergia que nos garantiza un resultado superior y a nuestros clientes un mayor nivel de recupero de su cartera </h2>
+        </div>
+      </div>
+    </div>
   </section>
+  <script async type="text/javascript" src="../js/navbar.js"></script>
 </body>
 
 </html>

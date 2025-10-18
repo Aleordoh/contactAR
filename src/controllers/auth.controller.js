@@ -1,6 +1,10 @@
+import db from '../database/models/index.js'
+const { User } = db
+
 const controller = {
-	index: (req, res) => {
-		return res.render('index', {
+	login: (req, res) => {
+    return res.send('Estas en login')
+/* 		return res.render('index', {
 			title: 'Contac-ar',
 			styles: ['head', 'index'],
 			buttons: [
@@ -8,10 +12,10 @@ const controller = {
 					text: 'Login',
 					iconText: 'login',
 					icon: 'material-symbols-outlined',
-					route: '/authenticate/login',
+					route: '/login',
 				},
 			],
-		})
+		}) */
 	},
 }
 export default controller

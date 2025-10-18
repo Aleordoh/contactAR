@@ -1,0 +1,59 @@
+/* === SweetAlert2 estilo Bulma === */
+.swal2-popup {
+  border-radius: 8px;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  padding: 2rem 2rem 1.5rem;
+}
+
+.swal2-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #363636; /* texto Bulma */
+}
+
+.swal2-html-container {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.swal2-confirm.swal2-styled {
+  background-color: #00d1b2 !important; /* Bulma primary */
+  color: #fff !important;
+  border: none !important;
+  font-weight: 500;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease;
+}
+
+.swal2-confirm.swal2-styled:hover {
+  background-color: #00b89c !important;
+}
+
+.swal2-cancel.swal2-styled {
+  background-color: #f14668 !important; /* Bulma danger */
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+.swal2-cancel.swal2-styled:hover {
+  background-color: #ff3860 !important;
+}
+
+.swal2-icon.swal2-success {
+  border-color: #00d1b2 !important;
+  color: #00d1b2 !important;
+}
+.swal2-icon.swal2-error {
+  border-color: #f14668 !important;
+  color: #f14668 !important;
+}
+.swal2-icon.swal2-warning {
+  border-color: #ffdd57 !important;
+  color: #ffdd57 !important;
+}
+.swal2-icon.swal2-info {
+  border-color: #209cee !important;
+  color: #209cee !important;
+}
+

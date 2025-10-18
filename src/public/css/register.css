@@ -1,0 +1,54 @@
+html,
+body {
+  font-family: 'Questrial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.hero.is-success {
+  background: linear-gradient(rgba(20, 40, 63, 0),
+      rgba(20, 40, 63, 0.63)),
+    url('../images/index/indexHero.webp') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box {
+  margin-top: 4rem;
+}
+
+.avatar {
+  margin-top: -70px;
+  padding-bottom: 20px;
+}
+
+.avatar img {
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+}
+
+input {
+  font-weight: 400;
+}
+
+
+p.subtitle {
+  padding-top: 1rem;
+}
+
+.login-hr {
+  border-bottom: 1px solid black; 
+  }
+
+.field {
+  padding-bottom: 10px;
+}
+
+.fa {
+  margin-left: 5px;
+}

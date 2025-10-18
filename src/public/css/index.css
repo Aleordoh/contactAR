@@ -1,0 +1,26 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.hero.is-landing {
+  background: linear-gradient(
+    rgba(20, 40, 63, 0),
+    rgba(20, 40, 63, 0.63)),
+    url('../images/index/indexHero.webp') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero .nav,
+.hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.hero .subtitle {
+  padding: 3rem 0;
+  line-height: 1.5;
+}

@@ -1,5 +1,6 @@
 import app from './src/app.js';
 import { init } from 'browser-sync';
+import  db  from "./src/database/models/index.js";
 
 const PORT = process.env.PORT || 3000;
 const ENVIRONMENT = process.env.ENVIRONMENT || 'development';
@@ -13,8 +14,28 @@ const server = app.listen(PORT, (err) => {
 	console.log(`Servidor corriendo en http://localhost:${PORT} (${ENVIRONMENT})`);
 });
 
+
+
+
+/* // ************ Sequelize  Sincroiniza modelos (solo en desarrollo) ************
+
+(async () => {
+	try {
+		await db.sequelize.authenticate();
+		console.log('✅ Conexión a la base de datos establecida.');
+		// 🔹 Sincroniza los modelos (solo en desarrollo)
+		if (ENVIRONMENT === 'development') {
+			await db.sequelize.sync({ alter: true });
+			console.log('🗂️ Modelos sincronizados con la base de datos.');
+		}
+	} catch (error) {
+		console.error('❌ Error al cincronizar la abase de datos:', error);
+	}
+})(); */
+
+
+
 // ************ BrowserSync (solo en desarrollo) ************
-console.log(ENVIRONMENT);
 
 if (ENVIRONMENT === 'development') {
 	init({
@@ -25,3 +46,5 @@ if (ENVIRONMENT === 'development') {
 		notify: false,
 	});
 }
+
+

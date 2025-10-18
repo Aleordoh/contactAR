@@ -1,0 +1,31 @@
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="../">
+              <img src="https://contact-ar.com/wp-content/uploads/2018/02/logo-contact-ar.png" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <% buttons.forEach(button => { %>
+              <span class="navbar-item">
+                <a class="button is-info is-outlined" id="navButton" href="<%- button.route %>">
+                  <span class="icon">
+                    <span class="<%-button.icon%>">
+                      <%-button.iconText%>
+                    </span>
+                  </span>
+                  <span><%-button.text%></span>
+                </a>
+              </span>
+              <% }) %>
+              
+            </div>
+          </div>
+        </div>
+      </nav>

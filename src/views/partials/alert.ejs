@@ -1,0 +1,14 @@
+<% if (alert) { %>
+<script>
+  Swal.fire({
+    icon: '<%= alert.icon %>',
+    title: '<%= alert.title %>',
+    text: '<%= alert.text %>',
+    theme: 'auto'
+  }).then(result => {
+    if (result.isConfirmed) {
+      window.location = '<%= alert.redirect %>';
+    }
+  });
+</script>
+<% } %>

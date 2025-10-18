@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <section class="hero is-success is-fullheight">
+    <div class="hero-head">
+      <%- include('../partials/navbar.ejs') %>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-4 is-offset-4">
+          <h3 class="title has-text-light">Crear usuario</h3>
+          <hr class="login-hr">
+          <div class="box has-background-dark">
+            <figure class="avatar">
+              <img src="https://contact-ar.com/wp-content/uploads/2018/02/logo-contact-ar.png" width="200">
+            </figure>
+            <form action="/user/register" method="POST">
+              <div class="field">
+                <div class="control">
+                  <input name="name" class="input is-large" type="text" placeholder="Nombre" autofocus>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input name="email" class="input is-large" type="email" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input name="password" class="input is-large" type="password" placeholder="Password">
+                </div>
+              </div>
+              <button class="button is-info is-large is-fullwidth" type="submit">
+                <spam>Crear</spam>
+                <spam class="icon">
+                  <span class="material-symbols-outlined">
+                    person_add
+                  </span>
+                </spam>
+              </button>
+            </form>
+          </div>
+          <!--   <p class="has-text-grey">
+                        <a href="../">Sign Up</a> &nbsp;·&nbsp;
+                        <a href="../">Forgot Password</a> &nbsp;·&nbsp;
+                        <a href="../">Need Help?</a>
+                    </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <script async type="text/javascript" src="../js/navbar.js"></script>
+</body>
+<%- include('../partials/alert.ejs') %>
+</html>
